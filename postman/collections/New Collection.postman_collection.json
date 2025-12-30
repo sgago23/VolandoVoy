@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_postman_id": "de68d3b2-ebc8-4543-ab44-3d5aab587ba3",
+    "name": "Gestion Vuelos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Lista Vuelos",
+      "id": "eb524262-bceb-48b0-8aba-75360eb1262c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vuelos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vuelo por ID",
+      "id": "b65967bc-2e0f-44ad-ae03-b31624c1bf9f",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vuelos/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vuelos",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Vuelo",
+      "id": "035a6556-67ce-4186-ba0b-3100d8bc4627",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombreVuelo\": \"FR123\",\r\n  \"empresa\": \"Air France\",\r\n  \"lugarSalida\": \"Paris\",\r\n  \"lugarLlegada\": \"Madrid\",\r\n  \"fechaSalida\": \"2025-11-01\",\r\n  \"fechaLlegada\": \"2025-11-02\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vuelos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Vuelo",
+      "id": "b25ecea0-ec9f-46ce-8f7e-fe32fe359bdf",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombreVuelo\": \"FR123\",\r\n  \"empresa\": \"Air France\",\r\n  \"lugarSalida\": \"Paris\",\r\n  \"lugarLlegada\": \"Barcelona\",\r\n  \"fechaSalida\": \"2025-11-01\",\r\n  \"fechaLlegada\": \"2025-11-02\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vuelos/9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vuelos",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Vuelo ID",
+      "id": "683537ed-11cb-4efa-8f2d-37e394ee5d4f",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vuelos/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vuelos",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
